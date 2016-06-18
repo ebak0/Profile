@@ -1,0 +1,64 @@
+<html>
+
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="./../scss/okabe-yumi.scss">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+  <script>
+      $(function() {
+      $('.arts li').hide();
+      $('.thumbs li').click( function() {
+        var class_name = $(this).attr("class");
+        var num = class_name.slice(3);
+        $('.arts li').hide();
+        $('.img' + num).fadeIn();
+      });
+     });
+  </script>
+
+  </head>
+
+  <body>
+
+  <header>
+    <div class="header-left">
+      GeekGirls
+      </div>
+
+      <div class="header-right">
+        <ul>
+      <li> <a href="okabe-yumi.html">TOP</a></li>
+      <li> <a href="okabe-yumi-works.html">WORKS</a></li>
+      <li> aiueo</li>
+      </ul>
+      </div>
+  </header>
+
+  <main>
+    <div class="top-contents">
+      <h1 class="title">my art works</h1>
+
+<hr>
+<ul class = "thumbs">
+<li class = "sam1">サムネ1</li>
+<li class = "sam2">サムネ2</li>
+<li class = "sam3">サムネ3</li>
+</ul>
+<hr>
+
+<ul class = "arts">
+<li class = "img1">画像1</li>
+<li class = "img2">画像2</li>
+<li class = "img3">画像3</li>
+</ul>
+
+
+    </div>
+  
+
+    <footer>
+    (C) えばこ
+    </footer>
+  </body>
+</html>
